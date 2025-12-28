@@ -7,6 +7,7 @@ sockaddr:
     .long 0          # INADDR_ANY
     .quad 0          # padding
 
+.section .text
 _start:
     mov $41, %rax      # syscall number: socket
     mov $2,  %rdi      # AF_INET (IPv4)
